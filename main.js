@@ -41,7 +41,7 @@ window.addEventListener("load", () => {
         const taskElement = addElement("li", "task");
         const taskContentElement = addElement("div", "content");
 
-         taskElement.appendChild(taskContentElement);
+        taskElement.appendChild(taskContentElement);
 
         const taskInputElement = createTaskDescriptionInput(task);
 
@@ -59,7 +59,9 @@ window.addEventListener("load", () => {
 
         listElement.appendChild(taskElement);
         input.value = "";
-
+        taskInputElement.addEventListener("click", () => {
+            taskInputElement.classList.toggle("completed")
+        })
         actionsButtonEdit.addEventListener("click", () => {
             if (actionsButtonEdit.innerText.toLowerCase() === "edit") {
                 taskInputElement.removeAttribute("readonly");
