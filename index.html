@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom modifications</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<main>
+    <blockquote contenteditable="true"><q>Any work is feasible if you divide it into small sections</q>
+        <cite>Abraham Lincoln</cite>
+    </blockquote>
+    <form id="new-task-form">
+        <input type="text" id="new-task-input" class="new-task__style" placeholder="What should be done?"/>
+        <input type="submit" id="new-task-submit" class="new-task-button__style" value="Add task"/>
+    </form>
+    <section>
+        <ul id="tasks" class="tasks__style">
+        </ul>
+    </section>
+</main>
+<script src="main.js"></script>
+</body>
+</html>
